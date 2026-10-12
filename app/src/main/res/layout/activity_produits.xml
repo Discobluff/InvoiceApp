@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="ExtraText,HardcodedText">
+
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:fillViewport="true"
+        android:padding="4sp"
+        android:scrollbarSize="15sp"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            tools:context=".ProduitsActivity"
+            tools:ignore="MissingConstraints"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/back_button_produits"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="12dp"
+
+                android:background="@drawable/buttonshape"
+                android:text="◀"
+
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/new_button"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="12dp"
+
+                android:background="@drawable/buttonshape"
+                android:text="+"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/validate_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Valider"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

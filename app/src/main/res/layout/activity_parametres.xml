@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NouvelleFactureActivity"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".NouvelleFactureActivity"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Informations compte Mail"
+            android:textColor="#009b55"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start">
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expéditeur : "
+                android:textColor="#009b55"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edit_text_exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Adresse mail"
+                android:maxLines="1"
+                android:textSize="18sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start">
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mot de passe : "
+                android:textColor="#009b55"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edit_text_mdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="16 caractères"
+                android:maxLines="1"
+                android:textSize="18sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start">
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Destinataire : "
+                android:textColor="#009b55"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edit_text_dest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Adresse mail"
+                android:maxLines="1"
+                android:textSize="18sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start">
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Objet du mail : "
+                android:textColor="#009b55"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edit_text_objet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Objet"
+                android:maxLines="1"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/back_button_parametres"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginLeft="12dp"
+
+                android:background="@drawable/buttonshape"
+                android:text="◀"
+
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+
+                tools:ignore="MissingConstraints" />
+
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Valider"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
